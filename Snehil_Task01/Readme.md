@@ -6,4 +6,4 @@ A simple HTML page that displays "Hello World" in the browser.
 Open "index.html" in any web browser.
 
 ##live link:-
-<>
+https://deathviser.github.io/TuteDude_Projects/Snehil_Task01/
