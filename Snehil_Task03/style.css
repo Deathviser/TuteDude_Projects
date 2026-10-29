@@ -15,7 +15,7 @@ body{
 }
 
 p{
-    color:white:
+    color:white;
 }
 
 #para{
@@ -25,4 +25,16 @@ p{
 #para span{
     color:black;
     font-size:24px;
+}
+
+a{
+    color:blue;
+}
+
+ol li:nth-child(2){
+    color:blue;
+}
+
+ol li:nth-child(3){
+    color:red;
 }
