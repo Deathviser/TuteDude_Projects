@@ -1,15 +1,52 @@
-.root{
-
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-navbar_section
+html,body{
+    height:100%;
+    overflow:hidden;
+    font-family: "Inter","Segoe UI",Arial, sans-serif;
+    background-color: #ffffff;
+}
 
-navbar{
+/*--navbar_section--*/
+
+.navbar{
     display:inline;
-    font: 10px sans-serif;
-    
+    height:50px;
+    width: 100px;
+    padding: 0 5px;
+    line-height: 50px;
+    font-size: 0;
+    background-color: #fdfdfd;
 }
 
+.nav-logo,.navlinks,.nav-user{
+    display:inline-block;
+    vertical-align:middle;
+    font-size: 1.1rem;
+}
+
+.nav-logo{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links{
+    width:55px;
+    text-align: center;
+}
+
+.nav-link a{
+    display:inline-block;
+    width:100
+}
 
 .book-btn{
     padding:10px 10px;
