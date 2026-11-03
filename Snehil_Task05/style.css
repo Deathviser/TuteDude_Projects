@@ -1,0 +1,22 @@
+.root{
+
+}
+
+navbar_section
+
+navbar{
+    display:inline;
+    font: 10px sans-serif;
+    
+}
+
+
+.book-btn{
+    padding:10px 10px;
+    border-radius:5px;
+    border:none;
+    background-color:aqua;
+    display:inline-block;
+    font-size:0.85rem;
+    color:aliceblue;
+}
