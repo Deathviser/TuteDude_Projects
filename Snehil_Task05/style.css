@@ -45,7 +45,19 @@ html,body{
 
 .nav-link a{
     display:inline-block;
-    width:100
+    margin:0 10px;
+    font-size: 1rem;
+    color: #555;
+    text-decoration:none;
+}
+
+.nav-link a:hover{
+    color: #0aa5ff;
+}
+
+.nav-user{
+    width: 100px;
+    text-align: center;
 }
 
 .book-btn{
