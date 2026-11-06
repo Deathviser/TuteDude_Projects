@@ -1,98 +1,97 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,body{
-    height:100%;
-    overflow:hidden;
-    font-family: "Inter","Segoe UI",Arial, sans-serif;
-    background-color: #ffffff;
+html,
+body {
+  height: 100vh;
+  overflow: hidden; /* whole page fits the screen, no scroll */
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: #ffffff;
 }
 
-/*--navbar_section--*/
-
-.navbar{
-    display:inline;
-    height:50px;
-    width: 100px;
-    padding: 0 5px;
-    line-height: 50px;
-    font-size: 0;
-    background-color: #fdfdfd;
+/* ---------- Navbar ---------- */
+.navbar {
+  height: 14vh;
+  width: 100vw;
+  padding: 0 5vw;
+  line-height: 14vh;           /* vertically centres inline content */
+  font-size: 0;                /* removes gaps between inline-blocks */
+  background: #fdfdfd;
 }
 
-.nav-logo,.navlinks,.nav-user{
-    display:inline-block;
-    vertical-align:middle;
-    font-size: 1.1rem;
+.nav-logo,
+.nav-links,
+.nav-user {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.1rem;
 }
 
-.nav-logo{
-    width: 100px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    font-weight: bold;
-    color: #333;
+.nav-logo {
+  width: 20%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #333;
 }
 
-.nav-links{
-    width:55px;
-    text-align: center;
+.nav-links {
+  width: 55%;
+  text-align: center;
 }
 
-.nav-link a{
-    display:inline-block;
-    margin:0 10px;
-    font-size: 1rem;
-    color: #555;
-    text-decoration:none;
+.nav-links a {
+  display: inline-block;
+  margin: 0 1.2vw;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #555;
 }
 
-.nav-link a:hover{
-    color: #0aa5ff;
+.nav-links a:hover {
+  color: #0aa5ff;
 }
 
-.nav-user{
-    width: 100px;
-    text-align: center;
+.nav-user {
+  width: 25%;
+  text-align: right;
 }
 
-.username{
-    display:inline-block;
-    line-height: 50px;
-    padding:1.6vh 2vw;
-    background:#e6f5ff;
-    color:#0aa5ff;
-    font-size:0.85rem;
-    font-weight:600;
-    border-radius:5px;
+.username {
+  display: inline-block;
+  line-height: normal;
+  padding: 1.6vh 2vw;
+  background: #e6f5ff;
+  color: #0aa5ff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 12px;
 }
 
-/*---hero_section---*/
-
-.hero{
-    height:86vh;
-    width:100vh;
-    font-size:0;
+/* ---------- Hero ---------- */
+.hero {
+  height: 86vh;
+  width: 100vw;
+  font-size: 0;
 }
 
-.hero-left,.hero-right{
-    display:inline-block;
-    vertical-align:top;
-    width:auto;
-    height:auto;
-    position:relative;
+.hero-left,
+.hero-right {
+  display: inline-block;
+  vertical-align: top;
+  width: 50vw;
+  height: 86vh;
+  position: relative;
 }
 
-.hero-text{
-    position:absolute;
-    top:50%;    
-    left:0;
-    transform:translateY(-50%);
-    padding:0 4vw 0 8vw;
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 0 4vw 0 8vw;
 }
 
 .hero-text h1 {
@@ -100,18 +99,18 @@ html,body{
   line-height: 1.5;
   color: #4a5560;
 }
- 
+
 .hero-text .highlight {
   color: #0aa5ff;
 }
- 
+
 .hero-text p {
   margin-top: 1.5vh;
   font-size: 1.15vw;
   line-height: 1.6;
   color: #9aa3ab;
 }
- 
+
 .book-btn {
   display: inline-block;
   margin-top: 5vh;
@@ -123,11 +122,11 @@ html,body{
   text-decoration: none;
   border-radius: 16px;
 }
- 
+
 .book-btn:hover {
   opacity: 0.9;
 }
- 
+
 .hero-right img {
   position: absolute;
   top: 50%;
