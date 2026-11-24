@@ -2,144 +2,129 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #ffffff;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* Container */
+/* 1. Container Setup: full height, flexbox */
 .container {
   display: flex;
-  width: 100%;
   height: 100vh;
+  width: 100%;
 }
 
-/* Left section */
+/* 2. Left Section: image centred on the left side */
 .left-section {
-  flex: 1;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle at center, #2db4ff 0%, #00a3ff 70%);
+  background: radial-gradient(circle at center, #3db8ff 0%, #00a2ff 70%);
 }
 
 .left-section img {
-  width: 70%;
+  width: 60%;
   max-width: 420px;
-  height: auto;
 }
 
-/* Form section */
+/* 3. Form Section: padding + flexbox, form centred */
 .form-section {
-  flex: 1;
+  width: 50%;
+  padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
-  background: #f2f9ff;
+  background: #f4faff;
 }
 
 .login-form {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   max-width: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
+/* 4. Heading and description */
 .login-form h1 {
   text-align: center;
   font-size: 28px;
-  color: #1f2d3a;
+  font-weight: 700;
+  color: #1f2a37;
 }
 
-.subtitle {
+.description {
   text-align: center;
+  font-size: 14px;
+  color: #4b5563;
+  margin: 6px 0 34px;
+}
+
+/* 5. Inputs */
+label {
   font-size: 12px;
-  color: #555;
-  margin: 8px 0 40px;
+  color: #1f2a37;
+  margin-bottom: 6px;
 }
 
-.login-form label {
-  font-size: 11px;
-  color: #333;
-  margin-bottom: 8px;
-}
-
-.login-form input {
-  padding: 16px;
-  margin-bottom: 20px;
+input {
+  width: 100%;
+  height: 46px;
   border: none;
+  outline: none;
   border-radius: 10px;
   background: #ffffff;
-  font-size: 12px;
-  outline: none;
-  transition: box-shadow 0.2s;
+  padding: 0 16px;
+  font-family: inherit;
+  font-size: 14px;
+  margin-bottom: 18px;
 }
 
-.login-form input:focus {
-  box-shadow: 0 0 0 2px #00a3ff;
+input::placeholder {
+  color: #b5bcc4;
+}
+
+input:focus {
+  box-shadow: 0 0 0 2px rgba(0, 162, 255, 0.35);
 }
 
 .forgot {
   align-self: flex-end;
-  margin-top: -12px;
-  font-size: 10px;
-  color: #333;
+  font-size: 11px;
+  color: #1f2a37;
   text-decoration: none;
+  margin-top: -10px;
+  margin-bottom: 22px;
 }
 
-/* Login button */
-.login-form button {
-  margin-top: 28px;
-  padding: 16px;
+/* 6. Login button */
+.login-btn {
+  width: 100%;
+  height: 52px;
   border: none;
   border-radius: 12px;
-  background: linear-gradient(180deg, #1ab0ff, #00a3ff);
+  background: linear-gradient(180deg, #1ab0ff, #009dff);
   color: #ffffff;
-  font-size: 14px;
-  font-weight: 500;
+  font-family: inherit;
+  font-size: 16px;
   cursor: pointer;
-  box-shadow: 0 6px 16px rgba(0, 163, 255, 0.35);
-  transition: transform 0.15s, box-shadow 0.15s;
+  box-shadow: 0 6px 14px rgba(0, 162, 255, 0.3);
 }
 
-.login-form button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0, 163, 255, 0.45);
+.login-btn:hover {
+  filter: brightness(1.05);
 }
 
 .register {
   text-align: center;
-  margin-top: 40px;
-  font-size: 10px;
-  font-weight: 700;
-  color: #333;
+  font-size: 11px;
+  font-weight: 500;
+  color: #1f2a37;
+  margin-top: 32px;
 }
 
 .register a {
-  color: #1a73e8;
+  color: #1a6dff;
   text-decoration: none;
-}
-
-/* Responsive: stack on small screens */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    height: auto;
-    min-height: 100vh;
-  }
-
-  .left-section {
-    padding: 30px 0;
-  }
-
-  .left-section img {
-    width: 50%;
-  }
 }

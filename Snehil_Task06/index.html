@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
+
+  <!-- 1. Container Setup -->
+  <div class="container">
+
+    <!-- 2. Left Section: image -->
     <div class="left-section">
-        <img src="asset/washer.jpg" alt="Image" width="100%" height="100%">
+      <img src="asset/washer.jpg" alt="Washing machine">
     </div>
+
+    <!-- 3. Form Section -->
     <div class="form-section">
-        <h1>Welcome Again</h1>
-        <h5>Welcome Back! We missed you.</h5>
-        <form action="login.php" method="post">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><br>
-            <a href="forgot_password.html">Forgot Password?</a><br><br>
-            <button type="submit" value="Login">
-            <p class="register">not a member? <a href="#">Register</a></p>
-        </form>
-</div>        
+      <form class="login-form">
+
+        <!-- 4. Form Heading and Description -->
+        <h1>Hello Again!</h1>
+        <p class="description">Welcome back! we missed you!</p>
+
+        <!-- 5. Email and Password Inputs -->
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Emailid@site.com">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Password">
+
+        <a href="#" class="forgot">Forgot Password</a>
+
+        <!-- 6. Login Button -->
+        <button type="submit" class="login-btn">Login</button>
+
+        <p class="register">Not a member? <a href="#">Register Now</a></p>
+      </form>
+    </div>
+
+  </div>
+
 </body>
 </html>
