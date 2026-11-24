@@ -4,7 +4,7 @@ A simple login page built with HTML and CSS using Flexbox.
 
 ## Live Link
 
-[Add your deployed link here](https://your-live-link.com)
+https://deathviser.github.io/TuteDude_Projects/Snehil_Task06/
 
 ## Files
 
